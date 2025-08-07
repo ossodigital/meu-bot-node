@@ -1,8 +1,3 @@
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-  res.send('✅ Bot Node está rodando na Vercel com sucesso!');
-});
-
-module.exports = app;
+module.exports = (req, res) => {
+  res.status(200).send('✅ OK: bot rodando na Vercel!');
+};
