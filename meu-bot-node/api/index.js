@@ -1,9 +1,5 @@
 // api/index.js
-const express = require("express");
-const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Meu bot está rodando 🚀");
-});
-
-module.exports = app;
+module.exports = (req, res) => {
+  res.status(200).send("Meu bot está rodando na Vercel 🚀");
+};
